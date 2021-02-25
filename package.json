@@ -1,0 +1,13 @@
+{
+    "name"         : "node-red-contrib-microid-io-board-output",
+    "version"      : "1.1.1",
+    "description"  : "MicroID IO-Board ver. 1.0",
+    "dependencies": {
+     },
+    "keywords": [ "node-red", "microid" ],
+    "node-red"     : {
+        "nodes": {
+            "IO-Board-Output": "IO-Board-Output.js"
+        }
+    }
+}
