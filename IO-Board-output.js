@@ -8,7 +8,6 @@ module.exports = function(RED) {
 		// this.ioplugin = RED.nodes.getNode(n.board);
         var node = this;
         this.on('input', function(msg) {
-        	// console.log({node,msg})
         	// {"model":"ioBoard","nFunction":"setRLY1","arguments":["IOBOARD-v1","MICROID-05RO",false]}
         	var state = config.state;
         	var board = node.board;
@@ -35,7 +34,6 @@ module.exports = function(RED) {
         	}
             
             msg.service = "socketiot/ioBoardApi/";
-            // console.log(msg)
             // msg.payload = {name:node.name,board:node.board,state:node.state,MAC:node.MAC}
             node.send(msg);
         });
